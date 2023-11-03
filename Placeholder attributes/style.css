@@ -1,0 +1,16 @@
+body{
+    background-color: #252525;
+}
+
+::placeholder{
+    color: yellow;
+}
+
+input[type="text"]{
+    padding: 12px;
+    border: 3px solid red;
+    border-radius: 4px;
+    background-color: #1f8ac0;
+    color: purple;
+    font-weight: bold;
+}
