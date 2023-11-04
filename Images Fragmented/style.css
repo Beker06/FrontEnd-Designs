@@ -1,0 +1,101 @@
+* {box-sizing: border-box;}
+
+:root{
+    --img-1: url(img/img1.jpg);
+    --img-2: url(img/img2.jpg);
+    --img-3: url(img/img3.jpg);
+}
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0c1016;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.container .col {
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: inherit;
+}
+
+.container .col .item {
+    width: inherit;
+    border-radius: 0.5rem;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.container .col-1 .item-1 {
+    height: 16rem;
+    background-color: red;
+    animation: bg 5s 150ms infinite ease-in-out;
+}
+.container .col-1 .item-2 {
+    height: 12rem;
+    background-color: blue;
+    animation: bg 5s 274ms infinite ease-in-out;
+}
+.container .col-1 .item-3 {
+    height: 6rem;
+    background-color: yellow;
+    animation: bg 5s 350ms infinite ease-in-out;
+}
+.container .col-2 .item-1 {
+    height: 20rem;
+    background-color: red;
+    animation: bg 5s 150ms infinite ease-in-out;
+}
+.container .col-2 .item-2 {
+    height: 18rem;
+    background-color: blue;
+    animation: bg 5s 274ms infinite ease-in-out;
+}
+.container .col-2 .item-3 {
+    height: 6rem;
+    background-color: yellow;
+    animation: bg 5s 350ms infinite ease-in-out;
+}
+.container .col-3 .item-1 {
+    height: 16rem;
+    background-color: red;
+    animation: bg 5s 150ms infinite ease-in-out;
+}
+.container .col-3 .item-2 {
+    height: 12rem;
+    background-color: blue;
+    animation: bg 5s 274ms infinite ease-in-out;
+}
+.container .col-3 .item-3 {
+    height: 6rem;
+    background-color: yellow;
+    animation: bg 5s 350ms infinite ease-in-out;
+}
+
+@keyframes bg {
+    0% { background-image: var(--img-1); }
+    30% { background-image: var(--img-1); }
+    33% { background-image: var(--img-2); }
+    63% { background-image: var(--img-2); }
+    66% { background-image: var(--img-3); }
+    96% { background-image: var(--img-3); }
+    100% { background-image: var(--img-1); }
+}
