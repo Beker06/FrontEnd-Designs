@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+#portal{
+    margin: auto;
+    margin-top: 200px;
+    width: 1px;
+    height: 1px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 100px 40px rgba(255, 208, 0, 0.767);
+    animation: rotate 1s linear infinite; 
+}
+.chispa{
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(orange, black);
+    margin: auto;
+    transform-origin: top left;
+    animation: resizer 1s ease-in-out infinite;
+}
+
+@keyframes resizer {
+    0% { height: 100px;}
+    50% { height: 150px;}
+    100% { height: 100px;}
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
