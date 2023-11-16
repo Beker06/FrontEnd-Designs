@@ -1,0 +1,42 @@
+.sharingan{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    animation: sharingans 1.5s linear infinite;
+}
+.lineaInterior{
+    width: 70%;
+    height: 70%;
+    outline-style: solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circulo{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    top: 20%;
+    border-radius: 50%;
+}
+.triangulo{
+    height: 18px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+}
+@keyframes sharingans {
+    to {transform: rotate(360deg);}
+}
