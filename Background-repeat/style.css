@@ -1,0 +1,16 @@
+div{
+    width: 500px;
+    height: 128px;
+    border: 2px solid #000;
+    background-image: url('https://www.freeiconspng.com//uploads/pikachu-png-icon-6.png');
+    resize: both;
+    overflow: auto;
+}
+/* Se adapta al espacio disponible y no corta */
+.round{
+    background-repeat: round;
+}
+/*Deja la imagen en su tamaño original y usa el espacio disponible*/
+.space{
+    background-repeat: space;
+}
